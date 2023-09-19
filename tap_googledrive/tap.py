@@ -32,7 +32,7 @@ class Tapgoogledrive(Tap):
             A list of discovered streams.
         """
         return [
-            streams.FilesStream(self)
+            streams.DriveFilesStream(self)
         ]
 
 

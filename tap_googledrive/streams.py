@@ -15,10 +15,10 @@ SCHEMAS_DIR = Path(__file__).parent / Path("./schemas")
 #       - Copy-paste as many times as needed to create multiple stream types.
 
 
-class FilesStream(googledriveStream):
+class DriveFilesStream(googledriveStream):
     """Define custom stream."""
 
-    name = "files"
+    name = "drivefiles"
     path = "/files"
     primary_keys: t.ClassVar[list[str]] = ["id"]
     schema = th.PropertiesList(
